@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head><title></title>
+</head>
+<body>
+  <form name="ass">
+  <input placeholder="INPUT HERE..." type="text" id="input" name="input" style="height: 50px; width: 100px; background-color: gray; color: white; font-size: 20px"/>
+  <hr/>
+  <button style="height: 30px; background-color: lawngreen" onclick="checkResult();">check</button>
+  <audio src="hurtbreak.mp3" controls></audio>
+  <script>
+  function checkResult(){
+  var value=document.ass.input.value;
+  if(value.length===2){
+    var sum=1955-value;
+    alert(sum+66);
+  }
+  else if(value.length===4){
+    var fig=value-66;
+    alert(1955-fig + "years old");
+  }
+  else{
+    alert("INVALID INPUT");
+  }
+}
+</script>
+</form>
+</body>
+</html>
